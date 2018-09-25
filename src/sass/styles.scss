@@ -1,0 +1,94 @@
+
+//variables
+$header-green: #7FB4AF;
+$logo-green: #B2D7D3;
+$font-grey: #9B9B9B;
+$button-pink: #E88088;
+
+//mixins
+
+
+@mixin for-phone-only {
+  @media(max-width: 599px){
+    @content
+    }
+  }
+
+@mixin for-tablet-up {
+  @media(min-width: 600px){
+    @content
+    }
+  }
+
+
+
+
+
+body {
+  font: 100%;
+  font-family: 'Nunito', sans-serif;
+  padding: 0px;
+  margin: 0px;
+  color: $font-grey;
+}
+
+.navbar {
+  background-color: $header-green;
+  display: grid;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  @include for-phone-only{
+  grid-template-rows: 90px;
+  grid-template-columns: 1fr 100px 1fr;
+  #burger {
+    padding-left: 10px;
+    width: 40px;
+    height: 40px;
+  }
+  h3 {
+    display: none;
+  }
+  #logo {
+    height: 90px;
+    }
+  }
+  @include for-tablet-up{
+  grid-template-rows: 90px;
+  grid-template-columns: 1fr 1fr 100px 1fr 1fr;
+
+  #burger {
+    display: none;
+  }
+  #logo {
+    height: 90px;
+    margin: auto;
+    }
+    h3 {
+        color: white;
+    }
+  }
+}
+
+
+.welcome-message {
+  margin: 10px;
+  border: 1px solid $font-grey;
+  padding-left: auto;
+  padding-right: auto;
+  display: grid;
+  justify-items: center;
+  grid-template-rows: 1fr 1fr 1fr;
+  button {
+    background-color: $button-pink;
+    font-family: 'Nunito', sans-serif;
+    border: 1px solid white;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+  }
+}
