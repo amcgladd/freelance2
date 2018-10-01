@@ -1,16 +1,35 @@
   <html>
     <head>
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+      <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    
+
     </head>
     <body>
+
       <div class="navbar">
-        <img id="burger" src="assets/images/burger.png" alt="menu icon">
-        <h3 class="header-link">Contact</h3>
-        <h3 class="header-link">Contact</h3>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <div class="header-link">Amenities</div>
+        <div class="header-link">Pricing</div>
         <img id="logo" src="assets/images/logo-circle.png" alt="logo">
-        <h3 class="header-link">Contact</h3>
-        <h3 class="header-link">Contact</h3>
+        <div class="header-link">Contact</div>
+        <div class="header-link"><a id= "header-button" class="waves-effect waves-light btn">Book A Tour</a></div>
       </div>
+
+      <ul class="sidenav" id="mobile-demo">
+          <li><a href="sass.html">Sass</a></li>
+          <li><a href="badges.html">Components</a></li>
+          <li><a href="collapsible.html">Javascript</a></li>
+          <li><a href="mobile.html">Mobile</a></li>
+        </ul>
+
+
+
       <div class="container">
       <div class="welcome">
       <img src="assets/images/head-image.png" alt="such a pup!" width="100%">

@@ -5,9 +5,8 @@ $logo-green: #B2D7D3;
 $font-grey: #9B9B9B;
 $button-pink: #E88088;
 
+
 //mixins
-
-
 @mixin for-phone-only {
   @media(max-width: 599px){
     @content
@@ -20,7 +19,21 @@ $button-pink: #E88088;
     }
   }
 
-
+  .btn{
+    background-color: $button-pink;
+  }
+  .btn:visited{
+    background-color: $button-pink;
+  }
+  .btn:hover {
+    background-color: $button-pink;
+  }
+  .btn:active{
+    background-color: $button-pink;
+  }
+  .btn:focus{
+    background-color: $button-pink;
+  }
 
 
 
@@ -32,12 +45,17 @@ body {
   color: $font-grey;
 }
 
+
 .navbar {
   background-color: $header-green;
   display: grid;
   align-items: center;
   justify-content: space-around;
   text-align: center;
+  .header-link {
+    color: white;
+    font-size: 2rem;
+  }
   @include for-phone-only{
   grid-template-rows: 90px;
   grid-template-columns: 1fr 100px 1fr;
@@ -46,7 +64,7 @@ body {
     width: 40px;
     height: 40px;
   }
-  h3 {
+  .header-link {
     display: none;
   }
   #logo {

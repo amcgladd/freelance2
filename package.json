@@ -25,5 +25,13 @@
     "webpack": "^4.0.1",
     "webpack-cli": "^2.0.9",
     "webpack-dev-server": "^3.1.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amcgladd/freelance2.git"
+  },
+  "bugs": {
+    "url": "https://github.com/amcgladd/freelance2/issues"
+  },
+  "homepage": "https://github.com/amcgladd/freelance2#readme"
 }
